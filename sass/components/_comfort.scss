@@ -1,0 +1,68 @@
+.comfort {
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+
+        &-wrap {
+            max-width: 30rem;
+        }
+
+        &-text-wrap {
+            max-width: 28.875rem;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration:none;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: $font-display;
+        color: $color-secondary;
+        cursor: pointer;
+        gap: 8px;
+    }
+
+    &__benefits-wrap {
+        margin-top: 4rem;
+        max-width: 100vw;
+        display: flex;
+        grid-column-gap:32px;
+        justify-content: space-between;
+    }
+
+    &__benefits-items {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    border: 1px solid $color-secondary;
+    border-radius: 15px;
+    
+    }
+
+    &__card-body {
+        padding: 40px;
+    }
+
+
+    &__icon-bg {
+        display: flex;
+        margin-bottom: 4rem;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary-lavender-light;
+        padding: 1.25rem;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+    }
+
+    &__text-wrap {
+        max-width: 17.7rem;
+    }
+}
+

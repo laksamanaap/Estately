@@ -1,0 +1,232 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-listings {
+    // background-color: aqua;
+    display: flex;
+    margin-bottom: 64px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration:none;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: $font-display;
+        color: $color-secondary;
+        cursor: pointer;
+        gap: 8px;
+    }
+
+    // Start : Big Card //
+    &__card {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        padding: 0px;
+        background: #FFFFFF;
+        border: 2px solid #E7DCFF;
+        border-radius: 15px;
+    }
+
+    &__img-wrap {
+        height: auto;
+        align-items: stretch;
+    }
+
+    &__content-wrap {
+        padding: 1.5rem 2rem;
+    }
+
+    &__detail-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-column-gap: 32px;
+    }
+
+    &__detail-price {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        grid-column-gap: 2px;
+        margin-bottom: 4px;
+
+        h3 {
+            font-family: $font-primary;
+            font-style: normal;
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: -0.03em;
+            color: $color-secondary;
+        }
+
+        .text-price {
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            font-family: $font-display;
+            font-weight: 300;
+            font-size: 1.125rem;
+            color: $color-secondary-dark;
+        }
+
+    }
+    
+    &__agents {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        
+        &-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            align-items: center;
+        }
+
+        &-photo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        }
+    
+        &-button {
+            background-color: $color-secondary;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+
+    &__card-location {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 8px;
+    
+        &-img {
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    }
+
+    &__card-description {
+        margin-top: 1.25rem;
+        line-height: 28px;
+    }
+    
+
+    &__facility {
+        background-color: $color-primary-lavender-lighter;
+        width: 100%;
+        height: auto;
+        border-radius:15px;
+        display: flex;
+        justify-content: center;
+        grid-column-gap: 75px;
+        grid-row-gap: 20px;
+        padding: 1.5rem 2rem;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-detail {
+            margin-top: 0.625rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &-wrap-text {
+            font-family: $font-display;
+            font-weight: 700;
+            color: $color-secondary;
+        }
+
+    }
+    // End : Big Card //
+
+    // Start : Small Card //
+    &__small-card-wrapper {
+        display: flex;
+        margin-top: 2.5rem;
+        grid-column-gap: 15px;
+    }
+
+    &__small-card {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        background: #FFFFFF;
+        border: 2px solid #E7DCFF;
+        border-radius: 15px;
+
+        &-content-wrap {
+            padding: 2rem 1.5rem 1.5rem;
+        }
+
+        
+        &-detail-price {
+            display: flex;
+            grid-column-gap:2px;
+
+            h4 {
+                font-family: $font-primary;
+                font-style: normal;
+                font-size: 2.5rem;
+                font-weight: 600;
+                line-height: 40px;
+                letter-spacing: -0.03em;
+                color: $color-secondary;
+                }
+    
+                .text-price-2 {
+                line-height: 32px;
+                display: flex;
+                align-items: center;
+                font-family: $font-display;
+                font-weight: 300;
+                font-size: 1.125rem;
+                color: $color-secondary-dark;
+                }
+        }
+
+        &-content-wrap {
+            display: flex;
+            grid-row-gap:16px;
+            flex-direction: column;
+        }
+
+        &-description {
+            margin-top: 16px;
+        }
+
+        &-facilities {
+            display: flex;
+            grid-column-gap: 24px;
+            grid-row-gap: 12px;
+        }
+
+        &-facility {
+            display: flex;
+            grid-column-gap:8px;
+            align-items: center;
+            justify-items: center;
+        }
+
+    }
+    // End : Small Card //
+    
+
+}

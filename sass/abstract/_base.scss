@@ -1,0 +1,42 @@
+/* Color */
+
+/*Color Primary (Lavender)*/
+$color-primary-lavender:#b592ff !important;
+$color-primary-lavender-dark:#c1a5ff !important; // Lavender 80
+$color-primary-lavender-light:#e7dcff !important; // Lavender 40
+$color-primary-lavender-lighter: #F7F2FF !important; //Lavender 20 
+
+/*Color Primary (Minion)*/
+$color-primary-minion:#ffe76c !important;
+$color-primary-minion-dark:#ffef9c !important; // Minion 80
+$color-primary-minion-light:#fff0da !important; // Minion 40
+
+/* Font */
+$font-primary: 'Syne', sans-serif !important;
+$font-display: 'Hanken Grotesk', sans-serif !important;
+
+/*Color Secondary*/
+$color-secondary: #191a23 !important; //100
+$color-secondary-dark:#686A79 !important; //80
+$color-secondary-light:#b7b8c1 !important; //40
+
+
+
+// RESPONSIVES BREAKPOINT PURPOSES
+$bp-largest: 75em; // 1200px / 16 == 75em (Default font size website)
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+* {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fbfaff;
+}

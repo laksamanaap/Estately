@@ -1,0 +1,101 @@
+.testimonial {
+    width: 100vw;
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64px;
+        &-wrap {
+            max-width: 30rem;
+        }
+
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration:none;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: $font-display;
+        color: $color-secondary;
+        cursor: pointer;
+        gap: 8px;
+    }
+
+    // Carousel //
+
+    .owl-dots {
+        display: none;
+    }
+
+    img.star-img {
+        width: 5%;
+    }
+
+    .owl-nav {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap:40px;
+    }
+
+    button.owl-prev, button.owl-next {
+        background-color: $color-secondary;
+        width: 52px;
+        height: 52px;
+        border-radius: 15px !important;
+        text-align:center;
+    }
+
+    button.owl-prev span, button.owl-next span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1.5rem !important;
+        flex-wrap: wrap;
+    }
+
+    &__card-wrapper {
+        width: 100%
+    }
+
+
+    &__card {
+        border: 2px solid $color-primary-lavender-light;
+        border-radius: 15px;
+        background: #ffffff;
+    }
+
+    &__content-wrapper {
+        padding: 32px;
+    }
+    
+    &__card-body {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap:32px;
+    }
+
+    &__star-wrapper {
+        display: flex;
+        grid-column-gap: 12px;
+        align-items: flex-start;
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &__text-wrapper {
+        height: 7.5rem;
+    }
+
+    &__author {
+        display: flex;
+        justify-content: space-between;
+    }
+}

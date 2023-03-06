@@ -1,0 +1,62 @@
+.cta {
+    background-color: $color-primary-lavender-dark;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:15px;
+    border: 2px solid $color-secondary;
+    overflow: hidden;
+    padding: 3.5rem 4.5rem;
+    position: relative;
+    z-index: 10;
+    
+    &__form-control {
+        border-radius: 15px !important;
+        border: none;
+    }
+
+    &__form-control::placeholder {
+        color: #B7B8C1;
+        font-weight: 300;
+    }
+
+    &__content-wrap {
+        width: 26rem;
+    }
+
+    &__title-wrap {
+        max-width: 22.375rem;
+        height: 112px;
+        letter-spacing: -0.04em;
+    }
+
+    &__text-wrap {
+        max-width: 26rem;
+    }
+    
+    &__btn {
+        background-color: $color-secondary;
+        border-radius:15px;
+        color: #ffffff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem 2rem;
+
+    }
+
+    &__bg-right {
+        position: absolute;
+        left: auto;
+        right: -2%;
+        width: 51.25%;
+
+        img {
+            overflow-x: hidden !important;
+            overflow-y: hidden !important;
+        }
+    }
+
+}
+
+

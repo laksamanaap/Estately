@@ -1,0 +1,56 @@
+.cities {
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+        &-wrap {
+            max-width: 30rem;
+        }
+
+        &-text-wrap {
+            max-width: 28.875rem;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration:none;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: $font-display;
+        color: $color-secondary;
+        cursor: pointer;
+        gap: 8px;
+    }
+
+    &__card-explore-cities-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    &__card-explore-cities {
+        background: #FFFFFF;
+        border: 2px solid $color-primary-lavender-light;
+        border-radius: 15px;
+    }
+
+    &__content-wrap {
+        padding:24px;
+    }
+
+    &__card-detail-wrap {
+        display: flex;
+        grid-column-gap:8px;
+        
+        img {
+            align-self: center;
+        }
+    }
+}

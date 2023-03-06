@@ -1,0 +1,187 @@
+%heading {
+    font-family: $font-primary ;
+    font-weight: 600;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    line-height: 1.22;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.heading-5 {
+    @extend %heading;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+// Paragraph Extends
+
+%paragraph-xlarge {
+    font-family: $font-display;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+%paragraph-large {
+    font-family: $font-display;
+    font-size: 1.125rem;
+}
+
+%paragraph-normal {
+    font-family: $font-display;
+    font-size: 1rem;
+}
+
+// Paragraph Gray Extends
+
+%paragraph-gray-xlarge {
+    color: $color-secondary-dark;
+    font-family: $font-display;
+    font-size: 1.25rem;
+    line-height: 1.5;       
+}
+
+%paragraph-gray-large {
+    color: $color-secondary-dark;
+    font-family: $font-display;
+    font-size: 1.125rem;
+}
+
+%paragraph-gray-light-large {
+    color: $color-primary-lavender-light;
+    font-family: $font-display;
+    font-size: 1.125rem;
+}
+
+%paragraph-gray-normal {
+    color: $color-secondary-dark;
+    font-family: $font-display;
+    font-size: 1rem;
+}
+
+// Paragraph XLarge
+
+.paragraph-xlarge-bold {
+    @extend %paragraph-xlarge;
+    font-weight: 600;
+
+    &--gray {
+        @extend %paragraph-gray-xlarge;
+        font-weight: 600
+    }
+}
+
+.paragraph-xlarge-medium {
+    @extend %paragraph-xlarge;
+    font-weight: 500;
+
+    &--gray {
+        @extend %paragraph-gray-xlarge;
+        font-weight: 500;
+    }
+}
+
+.paragraph-xlarge-regular {
+    @extend %paragraph-xlarge;
+    font-weight: 300;
+
+    &--gray {
+        @extend %paragraph-gray-xlarge;
+        font-weight: 300;
+        max-width: 457px;
+    }
+}
+
+// Paragraph Large
+.paragraph-large-bold {
+    @extend %paragraph-large;
+    font-weight: 600;
+
+    &--gray {
+        @extend %paragraph-gray-large;
+        font-weight: 600;
+    }
+}
+
+.paragraph-large-medium {
+    @extend %paragraph-large;
+    font-weight: 500;
+
+    &--gray {
+        @extend %paragraph-gray-large;
+        font-weight: 500;
+    }
+}
+
+.paragraph-large-regular {
+    @extend %paragraph-large;
+    font-weight: 300;
+
+    &--gray {
+        @extend %paragraph-gray-large;
+        font-weight: 300;
+    }
+
+    &--gray-light {
+        @extend %paragraph-gray-light-large;
+        font-weight: 300
+    }
+}
+
+
+// Paragraph Normal
+.paragraph-normal-bold {
+    @extend %paragraph-normal;
+    font-weight: 600;
+
+    &--gray {
+        @extend %paragraph-gray-normal;
+        font-weight: 600;
+    }
+}
+
+.paragraph-normal-medium {
+    @extend %paragraph-normal;
+    font-weight: 500;
+
+    &--gray {
+        @extend %paragraph-gray-normal;
+        font-weight: 500;
+    }
+}
+
+.paragraph-normal-regular {
+    @extend %paragraph-normal;
+    font-weight: 300;
+
+    &--gray {
+        @extend %paragraph-gray-normal;
+        font-weight: 300;
+    }
+}
+
+
+
+// .mb-sm {margin-bottom:2rem;}
+// .mb-md {margin-bottom:3rem;}
+// .mb-lg {margin-bottom:4rem;}
+// .mb-hg {margin-bottom:8rem;}

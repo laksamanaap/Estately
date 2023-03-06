@@ -32,7 +32,6 @@
         flex-direction: row;
         align-items: flex-start;
         gap: 32px;
-        justify-content: space-between;
     }
 
     &__featured {
@@ -41,8 +40,6 @@
         background: #FFFFFF;
         border: 2px solid $color-primary-lavender-light;
         border-radius: 15px;
-        width: 365.33px;
-        height: 110px;
         padding: 1.5rem;
         justify-content: space-between;
     }

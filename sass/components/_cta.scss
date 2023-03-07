@@ -10,6 +10,11 @@
     position: relative;
     z-index: 10;
     
+    @media only screen and (max-width: $bp-small) {
+        padding: 3.5rem 4.5rem 0 4.5rem;
+    }
+
+
     &__form-control {
         border-radius: 15px !important;
         border: none;
@@ -21,12 +26,12 @@
     }
 
     &__content-wrap {
-        width: 26rem;
+        // width: 26rem;
+        width: 100%;
     }
 
     &__title-wrap {
         max-width: 22.375rem;
-        height: 112px;
         letter-spacing: -0.04em;
     }
 
@@ -43,6 +48,11 @@
         right: 0;
         padding: 1rem 2rem;
 
+        @media only screen and (max-width: $bp-small) {
+            position: relative;
+            width: 100%;
+        }
+
     }
 
     &__bg-right {
@@ -50,11 +60,23 @@
         left: auto;
         right: -2%;
         width: 51.25%;
+        z-index: -11;
 
         img {
             overflow-x: hidden !important;
             overflow-y: hidden !important;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            position: relative;
+            right: 20%;
+            width: 100%;
+        }
+    }
+
+    .text-white {
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }

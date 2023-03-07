@@ -13,6 +13,11 @@
             align-items: center;
             justify-content: center;
         }
+
+        @media only screen and (max-width : $bp-large) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__link {
@@ -30,8 +35,9 @@
     &__featured-wrap {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 32px;
+        flex-wrap: wrap;
     }
 
     &__featured {
@@ -39,6 +45,7 @@
         flex-direction: row;
         background: #FFFFFF;
         border: 2px solid $color-primary-lavender-light;
+        height: 100%;
         border-radius: 15px;
         padding: 1.5rem;
         justify-content: space-between;

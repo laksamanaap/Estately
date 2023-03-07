@@ -13,6 +13,11 @@
             align-items: center;
             justify-content: center;
         }
+
+        @media only screen and (max-width : $bp-large) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__link {
@@ -33,6 +38,21 @@
         display: flex;
         grid-column-gap:32px;
         justify-content: space-between;
+
+        @media only screen and (max-width : $bp-large) {
+            flex-wrap: wrap;
+            grid-row-gap: 32px;
+        }
+
+        @media only screen and (max-width : $bp-medium) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width : $bp-small) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__benefits-items {
@@ -44,9 +64,9 @@
     flex: 1;
     }
 
-    &__card {
-        flex: 1;
-    }
+        &__card {
+            flex: 1;
+        }
 
     &__card-body {
         padding: 40px;

@@ -2,6 +2,17 @@
 .hero {
     position: relative;
 
+    @media only screen and (max-width: $bp-large) {
+        position: relative;
+    }
+    
+
+    &__title {
+        max-width: 608px;
+        
+        
+    }
+
     &__img-wrap {
         position: absolute;
         bottom: 0;
@@ -10,6 +21,10 @@
         z-index: -100;
         height: 692px;
         width: 100vw;
+
+        @media only screen and (max-width: $bp-large) {
+            display: block;
+        }
     }
 
     &__img {
@@ -32,21 +47,29 @@
         gap: 24px;
         background-color: #ffffff;
 
-        width: 763px;
-        height: 96px;
+        max-width: 763px;
+        width: 100%;
         border: 2px solid #000;
         border-radius: 15px;
         z-index: 1000;
 
-        
+        &__wrap {
+            display: flex;
+        }
 
         &__item {
             display: flex;
             align-items: center;
             font-family: $font-display;
             gap: 12px;    
-            
-        }
+            width: max-content;
+            padding: 0;
+        
+            // @media only screen and (max-width: $bp-large) {
+            //     display: flex;
+            //     align-items: stretch;
+            // }
+        } 
 
         &__img {
             background-color: $color-primary-lavender-light;
@@ -68,15 +91,58 @@
             font-size: 0.875rem;
             }
         }
+
+        @media only screen and (max-width : $bp-medium) {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+
+    }
+
+    &__right {
+        position: absolute;
+        left: 59.75%;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        z-index: -1;
+        width: 467px;
+        height: 100%;
+        max-height: 528px;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 141px;
+            position: relative;
+            left: 0;
+            width: 100%;
+            right: auto;
+            bottom: auto;
+            z-index: -1;
+            height: 500px;
+            // max-height: 528px;
+        }
+
     }
 
     &__illustration-wrap {
         position: relative;
         height: 100%;
-        left: 10%;
-        top: auto;
-        right: auto;
-        bottom: auto;
+        width: 100%;
+
+        &-item {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        // left: 10%;
+        
+
+        // @media only screen and (max-width: $bp-large) {
+        //     position: absolute;
+        // }
 
         &-item-1 {
             position: absolute;
@@ -90,7 +156,7 @@
 
         &-item-2 {
             position: absolute;
-            left: 12%;
+            left: -3%;
             top: 0%;
             right: auto;
             bottom: auto;
@@ -106,7 +172,9 @@
             width: 53.1%;
         }
     }
+    
 }
+
 
 .btn-hero-table {
     display: flex;
@@ -117,4 +185,9 @@
     gap: 8px;
     width: 141px;
     height: 58px;
+
+    @media only screen and (max-width : $bp-medium) {
+        display: flex;
+        width: 100%;
+    }
 }

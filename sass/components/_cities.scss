@@ -13,6 +13,11 @@
             align-items: center;
             justify-content: center;
         }
+
+        @media only screen and (max-width : $bp-large) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__link {
@@ -33,12 +38,14 @@
         align-items: flex-start;
         gap: 32px;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__card-explore-cities {
         background: #FFFFFF;
         border: 2px solid $color-primary-lavender-light;
         border-radius: 15px;
+        height: 100%;
     }
 
     &__content-wrap {
@@ -52,5 +59,9 @@
         img {
             align-self: center;
         }
+    }
+
+    @media only screen and (max-width: $bp-large){
+        flex-wrap: wrap;
     }
 }

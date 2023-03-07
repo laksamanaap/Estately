@@ -2,8 +2,18 @@
     background-color: #fbfaff;
 
     &__content-wrap {
-        // display: flex;
-        // justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column-gap:64px !important;
+            grid-row-gap:64px !important;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column-gap:64px !important;
+            grid-row-gap:64px !important;
+        }
     }
 
 
@@ -61,6 +71,20 @@
             font-size: 16px;
             line-height: 160%;
             color: #868893;
+        }
+    }
+
+    &__menu-group {
+        // display: flex;
+        // flex-wrap: wrap;
+        // grid-column-gap:64px;
+        // grid-row-gap: 64px;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: flex;
+            flex-wrap: wrap;
+            grid-column-gap:64px !important;
+            grid-row-gap:64px !important;
         }
     }
 }

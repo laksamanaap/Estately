@@ -50,6 +50,9 @@ body {
   .navbar-nav .nav-item:not(:last-child) {
     border-bottom: 2px solid #e7dcff !important; } }
 
+.navbar-nav .nav-item .btn {
+  margin-top: 56px; }
+
 .footer {
   background-color: #fbfaff; }
   .footer__content-wrap {

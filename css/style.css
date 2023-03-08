@@ -17,6 +17,11 @@ body {
 .navbar {
   font-family: "Hanken Grotesk", sans-serif !important;
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .navbar .btn {
+      display: flex;
+      width: 100%;
+      padding: 56px 20px 24px; } }
 
 .btn--primary {
   border: 1px solid black !important;
@@ -42,16 +47,21 @@ body {
   color: #fff !important;
   font-weight: 600 !important; }
 
-@media only screen and (max-width: 37.5em) {
-  .navbar-nav .nav-item {
-    padding: 24px 0px; } }
+.navbar-nav {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media only screen and (max-width: 37.5em) {
+    .navbar-nav .nav-item {
+      padding: 24px 0px; } }
+  @media only screen and (max-width: 37.5em) {
+    .navbar-nav .nav-item:not(:last-child) {
+      border-bottom: 2px solid #e7dcff !important; }
+    .navbar-nav .nav-item:nth-child(4) {
+      border-bottom: 2px solid #e7dcff !important; } }
 
-@media only screen and (max-width: 37.5em) {
-  .navbar-nav .nav-item:not(:last-child) {
-    border-bottom: 2px solid #e7dcff !important; } }
-
-.navbar-nav .nav-item .btn {
-  margin-top: 56px; }
+.nav-item {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important; }
 
 .footer {
   background-color: #fbfaff; }

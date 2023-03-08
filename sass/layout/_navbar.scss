@@ -1,6 +1,17 @@
 .navbar {
     font-family: $font-display;
     display: flex;
+
+    
+
+    @media only screen and(max-width:$bp-small) {
+        .btn {
+            display: flex;
+            width: 100%;
+            padding: 56px 20px 24px;
+        }
+    }
+
 }
 
 .btn {
@@ -38,6 +49,8 @@
 }
 
 .navbar-nav {
+    margin-left: auto !important;
+    margin-right: auto !important;
 
     @media only screen and (max-width:$bp-small) {
         .nav-item {
@@ -49,12 +62,17 @@
         .nav-item:not(:last-child) {
             border-bottom: 2px solid $color-primary-lavender-light;
         }
-    }
-    
-    .nav-item {
-        .btn {
-            margin-top: 56px;
+
+        .nav-item:nth-child(4) {
+            border-bottom: 2px solid $color-primary-lavender-light;;
         }
     }
+    
 }
+
+.nav-item {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
 

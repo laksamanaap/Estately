@@ -196,6 +196,14 @@
     // End : Big Card //
 
     // Start : Small Card //
+
+    &__row {
+        grid-row-gap:24px;
+        @media only screen and(max-width: $bp-medium) {
+            grid-row-gap:32px;
+        }
+    }
+
     &__small-card-wrapper {
         display: flex;
         margin-top: 2.5rem;

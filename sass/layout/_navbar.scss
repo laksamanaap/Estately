@@ -17,6 +17,12 @@
         @media only screen and (max-width:600px) {
             padding: .3rem 1.2rem;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            width: 100%;
+            padding: 56px 20px 24px;
+        }
     }
 
     &--secondary {
@@ -27,4 +33,23 @@
         font-weight: 600 !important;
         
     }
+
+    
 }
+
+.navbar-nav {
+
+    @media only screen and (max-width:$bp-small) {
+        .nav-item {
+            padding: 24px 0px;
+        }
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        .nav-item:not(:last-child) {
+            border-bottom: 2px solid $color-primary-lavender-light;
+        }
+    }
+    
+}
+

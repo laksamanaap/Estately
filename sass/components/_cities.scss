@@ -1,5 +1,12 @@
 .cities {
 
+    &__row {
+        grid-row-gap:24px;
+        @media only screen and(max-width: $bp-medium) {
+            grid-row-gap:32px;
+        }
+    }
+
     &__heading {
         display: flex;
         justify-content: space-between;

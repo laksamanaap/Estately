@@ -1,5 +1,12 @@
 .agents {
     
+    &__row {
+        grid-row-gap: 48px;
+
+        @media only screen and(max-width: $bp-medium) {
+            grid-row-gap:32px;
+        }
+    }
 
     &__heading {
         display: flex;

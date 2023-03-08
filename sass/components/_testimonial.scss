@@ -42,6 +42,10 @@
         grid-column-gap:40px;
     }
 
+    .owl-stage-outer {
+        overflow: visible !important;
+    }
+
     button.owl-prev, button.owl-next {
         background-color: $color-secondary;
         width: 52px;

@@ -29,6 +29,11 @@ body {
   @media only screen and (max-width: 600px) {
     .btn--primary {
       padding: .3rem 1.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .btn--primary {
+      display: flex;
+      width: 100%;
+      padding: 56px 20px 24px; } }
 
 .btn--secondary {
   border-radius: 15px !important;
@@ -37,12 +42,20 @@ body {
   color: #fff !important;
   font-weight: 600 !important; }
 
+@media only screen and (max-width: 37.5em) {
+  .navbar-nav .nav-item {
+    padding: 24px 0px; } }
+
+@media only screen and (max-width: 37.5em) {
+  .navbar-nav .nav-item:not(:last-child) {
+    border-bottom: 2px solid #e7dcff !important; } }
+
 .footer {
   background-color: #fbfaff; }
   .footer__content-wrap {
     display: flex;
     justify-content: space-between; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 48em) {
       .footer__content-wrap {
         grid-column-gap: 64px !important;
         grid-row-gap: 64px !important; } }
@@ -83,6 +96,7 @@ body {
       color: #191a23 !important;
       font-weight: 500; }
   .footer__copyright {
+    margin-top: 80px;
     padding-top: 32px;
     border-top: 1px solid #d6d7e0;
     text-align: center; }
@@ -91,7 +105,7 @@ body {
       font-size: 16px;
       line-height: 160%;
       color: #868893; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 48em) {
     .footer__menu-group {
       display: flex;
       flex-wrap: wrap;
@@ -159,14 +173,17 @@ body {
       font-weight: bold;
       color: #191a23 !important;
       font-size: 0.875rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 48em) {
       .hero-table {
         display: flex;
         flex-direction: column;
         align-items: stretch; } }
+    @media only screen and (max-width: 62.5em) {
+      .hero-table {
+        gap: 14px; } }
   .hero__right {
     position: absolute;
-    left: 59.75%;
+    left: 62.75%;
     top: 0;
     right: auto;
     bottom: auto;
@@ -177,6 +194,7 @@ body {
     @media only screen and (max-width: 62.5em) {
       .hero__right {
         margin-top: 141px;
+        margin-bottom: 141px;
         position: relative;
         left: 0;
         width: 100%;
@@ -184,6 +202,12 @@ body {
         bottom: auto;
         z-index: -1;
         height: 500px; } }
+    @media only screen and (max-width: 48em) {
+      .hero__right {
+        margin-bottom: 141px; } }
+    @media only screen and (max-width: 37.5em) {
+      .hero__right {
+        margin-bottom: 0; } }
   .hero__illustration-wrap {
     position: relative;
     height: 100%;
@@ -223,7 +247,7 @@ body {
   gap: 8px;
   width: 141px;
   height: 58px; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 48em) {
     .btn-hero-table {
       display: flex;
       width: 100%; } }
@@ -371,7 +395,11 @@ body {
       padding: 3.5rem 4.5rem 0 4.5rem; } }
   .cta__form-control {
     border-radius: 15px !important;
-    border: none; }
+    border: none;
+    padding: 24px; }
+    @media only screen and (max-width: 37.5em) {
+      .cta__form-control {
+        padding: 13px 16px; } }
   .cta__form-control::placeholder {
     color: #B7B8C1;
     font-weight: 300; }
@@ -393,7 +421,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .cta__btn {
         position: relative;
-        width: 100%; } }
+        width: 100%;
+        padding: 16px 32px; } }
   .cta__bg-right {
     position: absolute;
     left: auto;
@@ -411,6 +440,12 @@ body {
   .cta .text-white {
     padding-left: 0;
     padding-right: 0; }
+
+.agents__row {
+  grid-row-gap: 48px; }
+  @media only screen and (max-width: 48em) {
+    .agents__row {
+      grid-row-gap: 32px; } }
 
 .agents__heading {
   display: flex;
@@ -510,6 +545,8 @@ body {
     justify-content: center;
     align-items: center;
     grid-column-gap: 40px; }
+  .testimonial .owl-stage-outer {
+    overflow: visible !important; }
   .testimonial button.owl-prev, .testimonial button.owl-next {
     background-color: #191a23 !important;
     width: 52px;
@@ -547,6 +584,12 @@ body {
   .testimonial__author {
     display: flex;
     justify-content: space-between; }
+
+.cities__row {
+  grid-row-gap: 24px; }
+  @media only screen and (max-width: 48em) {
+    .cities__row {
+      grid-row-gap: 32px; } }
 
 .cities__heading {
   display: flex;
@@ -636,7 +679,7 @@ body {
     .comfort__benefits-wrap {
       flex-wrap: wrap;
       grid-row-gap: 32px; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 48em) {
     .comfort__benefits-wrap {
       display: flex;
       flex-direction: column; } }
@@ -703,8 +746,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 32px;
+  gap: 24px;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 48em) {
+    .categories__featured-wrap {
+      grid-row-gap: 32px; } }
 
 .categories__featured {
   display: flex;
@@ -748,7 +794,7 @@ body {
 .heading {
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 48em) {
     .heading {
       display: flex;
       flex-direction: column; } }
@@ -790,7 +836,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     grid-column-gap: 32px; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 48em) {
       .featured-listings__detail-top {
         display: flex;
         flex-direction: column; } }
@@ -879,11 +925,16 @@ body {
       .featured-listings__facility {
         display: flex;
         flex-direction: column; } }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 48em) {
       .featured-listings__facility {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row; } }
+  .featured-listings__row {
+    grid-row-gap: 24px; }
+    @media only screen and (max-width: 48em) {
+      .featured-listings__row {
+        grid-row-gap: 32px; } }
   .featured-listings__small-card-wrapper {
     display: flex;
     margin-top: 2.5rem;

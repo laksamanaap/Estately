@@ -54,32 +54,32 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active mx-4" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mx-4" href="#">Properties</a>
+            <a class="nav-link active" href="#">Properties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mx-4" href="#">Agents</a>
+            <a class="nav-link active" href="#">Agents</a>
           </li>
-          <li class="nav-item dropdown mx-4">
+          <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Pages
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu mb-3" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Home</a></li>
               <li><a class="dropdown-item" href="#">Properties</a></li>
               <li><a class="dropdown-item" href="#">Agents</a></li>
             </ul>
           </li>
+          <div class="nav-item">
+            <button class="btn btn--primary">Contact Us</button>
+          </div>
         </ul>
 
-        <div>
-          <button class="btn btn--primary">Contact Us</button>
-        </div>
 
       </div>
     </div>
@@ -170,7 +170,7 @@
       </div>
 
       <!-- Big card img -->
-      <div class="featured-listings__card mt-5 mb-3" style="max-width: 100vw;">
+      <div class="featured-listings__card mt-5 mb-4" style="max-width: 100vw;">
         <div class="row g-0">
           <div class="col-md-5">
             <div class="featured-listings__img-wrap">
@@ -305,10 +305,7 @@
 
       <!-- Small card Content -->
 
-      <div class="row g-0">
-
-        <div class="featured-listings__small-card-wrapper">
-
+      <div class="row featured-listings__row row-cols-1 row-cols-md-2 row-cols-lg-3">
           <!-- Small card 1 -->
           <div class="col featured-listings__small-card-1">
             <div class="featured-listings__small-card">
@@ -616,7 +613,7 @@
         <a href="#" class="cities__link">Browse All Cities <img src="assets/icons/arrow-right.svg"></a>
       </div>
 
-      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gy-4">
+      <div class="row cities__row row-cols-1 row-cols-md-2 row-cols-lg-3">
           <!-- City 1-->
           <div class="col">
             <div class="cities__card-explore-cities">
@@ -686,7 +683,7 @@
       <div class="agents__row-wrapper">
 
         <div class="agents__card-agents-wrap">
-          <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gy-5 gx-4">
+          <div class="row agents__row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 gx-4">
 
             <div class="col">
               <!-- Agent Edwin -->
@@ -900,7 +897,7 @@
       </div>
     
       <!-- Carousel -->
-      <div class="container-fluid my-5">
+      
         <div class="row">
             <div class="col-12 m-auto">
               
@@ -1052,14 +1049,14 @@
               </div>
             </div>
         </div>
-    </div>
+
       
     </div> 
   </section>
   <!-- End : Section Testimonial -->
 
     <!-- cta -->
-    <div class="container-xxl py-5" data-wow-delay="0.1s">
+    <div class="py-5">
       <div class="container">
           <div class="cta">
               <div class="row g-5 align-items-center">
@@ -1072,8 +1069,8 @@
                           <div class="paragraph-large-regular--gray-light">Join our newsletter to stay up to date on features and releases.</div>
                         </div>
                         <div class="cta__form position-relative mt-3">
-                          <input class="cta__form-control w-100 py-4 ps-4 pe-5" type="text" placeholder="Enter Your Email Address">
-                          <button class="cta__btn me-2" type="button" style="margin-top: 7px;"><div class="paragraph-normal-bold">Subscribe</div></button>
+                          <input class="cta__form-control w-100" type="text" placeholder="Enter Your Email Address">
+                          <button class="cta__btn me-2" type="button" style="margin-top: 8px;"><div class="paragraph-normal-bold">Subscribe</div></button>
                       </div>
                     </div>  
                   </div>
@@ -1173,7 +1170,6 @@
       </div>
         <!-- Grid row -->
       </div>
-    </div>
       <div class="footer__copyright">
         <!-- Copyright -->
         <div class="footer__copyright-text">
@@ -1181,6 +1177,7 @@
         </div>
         <!-- Copyright -->
       </div>
+    </div>
       </div>
   </section>
   <!-- Section: Links  -->

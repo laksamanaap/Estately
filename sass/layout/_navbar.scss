@@ -73,6 +73,10 @@
 .nav-item {
     margin-left: 1.5rem !important;
     margin-right: 1.5rem !important;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-left: 0 !important;
+    }
 }
 
 

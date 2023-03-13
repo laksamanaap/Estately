@@ -26,6 +26,18 @@
             display: flex;
             flex-direction: column;
         }
+
+        @media only screen and (max-width: 480px) {
+            .heading-2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            .heading-2 {
+                font-size: 2rem;
+            }
+        }
     }
 
     &__link {
@@ -38,6 +50,13 @@
         color: $color-secondary;
         cursor: pointer;
         gap: 8px;
+        transition: all .2s ease-out;
+
+        &:hover {
+            transition: all .2s ease-out;
+            transform: translateX(8px);
+            color: $color-primary-lavender  ;
+        }
     }
 
     &__card-agents-wrap {
@@ -45,6 +64,17 @@
         flex-direction: row;
         grid-column-gap:32px;
         grid-row-gap:24px;
+    }
+
+
+    &__card-agents-detail {
+        cursor: pointer;
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+            line-height: 0 !important;
+        }
+
     }
 
     &__card-agents {
@@ -57,6 +87,23 @@
         background: #FFFFFF;
         border: 2px solid $color-primary-lavender-light;
         border-radius: 15px;
+        transition: all 0.3s linear;
+
+        &:hover {
+            border: 2px solid $color-primary-lavender;
+            box-shadow: 0px 0px 999px 999px rgba(237, 237, 237, 0.5);
+            z-index: 500;
+            transition: all 0.3s linear;
+            transform: translateY(-2px);
+        }
+
+        @media only screen and (max-width:$bp-smallest) {
+            padding: 1.5rem 0.8rem;
+
+            .heading-5 {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     &__card-social-wrap {
@@ -88,12 +135,25 @@
         background-color: $color-primary-lavender-light;
         border-radius:15px;
         width: 108px;
-        height: 108px;
 
         img {
             overflow: hidden;
             border-radius:15px;
+
+            @media only screen and (max-width:$bp-smallest) {
+                width: 87px;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            
         }
+
+        @media only screen and (max-width:$bp-smallest) {
+                width: 87px;
+                height: 100%;
+            }
     }
     
 }

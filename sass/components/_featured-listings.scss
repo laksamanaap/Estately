@@ -6,12 +6,20 @@
         display: flex;
         flex-direction: column;
     }
+
+    @media only screen and (max-width : $bp-smallest) {
+        .heading-2 {
+            font-size: 2rem;
+        }
+    }
 }
 
 .featured-listings {
     // background-color: aqua;
     display: flex;
     margin-bottom: 64px;
+    
+    
 
     &__link {
         display: flex;
@@ -23,9 +31,26 @@
         color: $color-secondary;
         cursor: pointer;
         gap: 8px;
+        transition: all .2s ease-out;   
     }
 
+    &__link:hover {
+        transition: all .2s ease-out;
+        transform: translateX(8px);
+        color: $color-primary-lavender  ;
+    }
+
+
+
     // Start : Big Card //
+
+    &__card-detail-wrap {
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-top: 1.5rem !important;
+        }
+    }
+
     &__card {
         // display: flex;
         // flex-direction: row;
@@ -34,6 +59,13 @@
         background: #FFFFFF;
         border: 2px solid #E7DCFF;
         border-radius: 15px;
+        transition: all .2s ease-out;
+
+        &:hover {
+            transform: translateY(-7px);
+            transition: all .2s ease-out;
+            box-shadow: 0px 7px 7px 0px #c1a5ff4f;
+        }
     }
 
     &__img-wrap {
@@ -48,12 +80,21 @@
             height: 100%;
             object-fit: cover;
             object-position: cover;
+
+            @media only screen and (max-width:$bp-medium) {
+                border-radius: 15px !important;
+            }
+
         }
 
     }
 
     &__content-wrap {
         padding: 1.5rem 2rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 1.5rem 0.6rem;
+        }
     }
 
     &__detail-top {
@@ -131,6 +172,21 @@
         }
     }
 
+    &__card-name {
+        cursor: pointer;
+        margin-bottom: 0.5rem !important;
+
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            .heading-4 {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
 
     &__card-location {
         display: flex;
@@ -141,6 +197,12 @@
             display: inherit;
             align-items: center;
             justify-content: center;
+        }
+
+        @media only screen and(max-width:$bp-smallest) {
+            .paragraph-xlarge-regular--gray {
+                font-size: 0.9rem !important;
+            }
         }
     
     }
@@ -192,6 +254,13 @@
             flex-direction: row;
         }
 
+        @media only screen and (max-width: $bp-smallest) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 24px;
+            grid-row-gap: 16px;
+        }
+        
     }
     // End : Big Card //
 
@@ -227,7 +296,7 @@
         border: 2px solid #E7DCFF;
         border-radius: 15px;
         height: 100%;
-        
+        transition: all .5s ease-out;
 
 
         img {
@@ -239,7 +308,17 @@
             padding: 2rem 1.5rem 1.5rem;
         }
 
-        
+        &-detail-name {
+        cursor: pointer;
+        margin-bottom: 0.5rem !important;
+
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+        }
+            
+        }
+
         &-detail-price {
             display: flex;
             grid-column-gap:2px;
@@ -289,6 +368,11 @@
             justify-items: center;
         }
 
+        &:hover {
+            transform: translateY(-7px);
+            transition: all .2s ease-out;
+            border: 2px solid $color-primary-lavender;
+        }
     }
     // End : Small Card //
     

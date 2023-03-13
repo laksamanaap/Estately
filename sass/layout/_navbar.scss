@@ -14,6 +14,12 @@
 
 }
 
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: transparent;
+}
+
+
 .btn {
 
     &--primary {
@@ -34,6 +40,12 @@
             width: 100%;
             padding: 56px 20px 24px;
         }
+
+        &:hover {
+            background-color: #191A23;
+            color: #ffffff;
+            transition: all ease-out .2s;
+        }
     }
 
     &--secondary {
@@ -42,6 +54,13 @@
         background: #191A23 !important;
         color: #fff !important;
         font-weight: 600 !important;
+        
+        &:hover {
+            background-color: transparent !important;
+            color: $color-secondary;
+            border: 1px solid $color-secondary;
+            transition: all .2s ease-out;
+        }
         
     }
 
@@ -73,10 +92,27 @@
 .nav-item {
     margin-left: 1.5rem !important;
     margin-right: 1.5rem !important;
+    color: $color-secondary;
 
     @media only screen and (max-width: $bp-small) {
         margin-left: 0 !important;
     }
+
+    & a {
+        color: $color-secondary;
+    }
+
 }
 
+.navbar-nav > li > a {
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
 
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: #f2eaff;
+    transition: all .2s ease-out;
+    transform: translateY(-3px);
+    border-radius: 5px;
+
+}

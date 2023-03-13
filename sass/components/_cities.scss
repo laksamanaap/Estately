@@ -25,6 +25,13 @@
             display: flex;
             flex-direction: column;
         }
+
+
+        @media only screen and (max-width: $bp-smallest) {
+            .heading-2 {
+                font-size: 2rem;
+            }
+        }
     }
 
     &__link {
@@ -37,6 +44,13 @@
         color: $color-secondary;
         cursor: pointer;
         gap: 8px;
+        transition: all .2s ease-out;
+
+        &:hover {
+            transition: all .2s ease-out;
+            transform: translateX(8px);
+            color: $color-primary-lavender  ;
+        }
     }
 
     &__card-explore-cities-wrap {
@@ -53,11 +67,40 @@
         border: 2px solid $color-primary-lavender-light;
         border-radius: 15px;
         height: 100%;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            transition: all 0.2s ease-out;
+            box-shadow: 0px 5px 8px rgba(38, 38, 38, 0.2);
+            transform: translateY(-4px);
+            border: 2px solid $color-primary-lavender;
+            background-color: white;
+          }
+
+          img {
+            border-radius: 15px;
+          }
     }
 
     &__content-wrap {
         padding:24px;
     }
+
+    &__card-cities-location {
+        cursor: pointer;
+        margin-bottom: 0.5rem !important;
+
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        .heading-5 {
+            font-size: 1.3rem;
+        }   
+    }
+}
 
     &__card-detail-wrap {
         display: flex;

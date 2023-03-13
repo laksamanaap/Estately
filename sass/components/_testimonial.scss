@@ -9,6 +9,12 @@
             max-width: 30rem;
         }
 
+        @media only screen and(max-width:$bp-smallest) {
+            h2.heading-2 {
+                font-size: 28px;
+            }
+        }
+
     }
 
     &__link {
@@ -23,45 +29,7 @@
         gap: 8px;
     }
 
-    // Carousel //
-
-
-    .owl-dots {
-        display: none;
-    }
-
-    img.star-img {
-        width: 5%;
-    }
-
-    .owl-nav {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column-gap:40px;
-    }
-
-    .owl-stage-outer {
-        overflow: visible !important;
-    }
-
-    button.owl-prev, button.owl-next {
-        background-color: $color-secondary;
-        width: 52px;
-        height: 52px;
-        border-radius: 15px !important;
-        text-align:center;
-    }
-
-    button.owl-prev span, button.owl-next span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #ffffff;
-        font-size: 1.5rem !important;
-        flex-wrap: wrap;
-    }
+    
 
     &__card-wrapper {
         width: 100%
@@ -95,12 +63,83 @@
         }
     }
 
-    &__text-wrapper {
-        height: 7.5rem;
-    }
+    // &__text-wrapper {
+    //     height: 7.5rem;
+    // }
 
     &__author {
         display: flex;
         justify-content: space-between;
     }
 }
+
+ /* the slides */
+ .slick-slide {
+    margin: 0 12px;
+}
+
+@media only screen and(max-width:$bp-small) {
+.slick-slide.slick-cloned {
+    margin: 0 6px;
+}    
+}
+
+
+/* the parent */
+.slick-list {
+    margin: 0 -24px 150px 0;
+    overflow: visible !important;
+}
+
+.slick-prev,.slick-next {
+    background-color: $color-secondary;
+    width: 52px;
+    height: 52px;
+    border-radius: 15px !important;
+    top: 107%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    display: inline-block;
+    position: absolute !important;
+    transition: all .2s ease-out;
+}
+
+.slick-prev {
+    left: 44.5%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        left: 30%;
+    }
+}
+
+.slick-next {
+    right: 44.5%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        right: 30%;
+    }
+}
+
+.slick-prev:before {
+    content: "🡠";
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.5rem !important;
+  }
+
+  
+  .slick-next:before {
+    content: "🡢";
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.5rem !important;
+  }

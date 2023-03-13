@@ -9,8 +9,8 @@
 
     &__title {
         max-width: 608px;
-        
-        
+    
+
     }
 
     &__img-wrap {
@@ -27,6 +27,18 @@
         }
     }
 
+    &__left-wrap {
+        h1.heading-1 {
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 42px;
+            }
+
+            @media only screen and (max-width: 320px){
+                font-size: 37px;
+            }
+        }
+    }
+
     &__img {
         position: relative;
         top: 84px;
@@ -38,6 +50,8 @@
         display: block;
     }
 
+    
+    
     &-table {
         display: flex;
         flex-direction: row;
@@ -69,12 +83,18 @@
             //     display: flex;
             //     align-items: stretch;
             // }
+            
+
+            
         } 
 
         &__img {
             background-color: $color-primary-lavender-light;
             padding: .8rem .8rem;
             border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             }
 
         &__content {
@@ -203,4 +223,6 @@
         display: flex;
         width: 100%;
     }
+
+    
 }

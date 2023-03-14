@@ -29,7 +29,7 @@
 
     &__left-wrap {
         h1.heading-1 {
-            @media only screen and (max-width: $bp-smallest) {
+            @media only screen and (max-width: $bp-small) {
                 font-size: 42px;
             }
 

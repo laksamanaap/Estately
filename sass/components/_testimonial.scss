@@ -110,17 +110,51 @@
 .slick-prev {
     left: 44.5%;
 
-    @media only screen and (max-width: $bp-smallest) {
-        left: 30%;
+    @media only screen and (max-width: $bp-largest) {
+        left: 45%;
     }
+
+    @media only screen and (max-width: $bp-large) {
+        left: 43%;
+    }
+
+    @media only screen and (max-width :$bp-medium) {
+        left: 38%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        left: 35%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        left: 33%;
+    }
+
 }
 
 .slick-next {
     right: 44.5%;
 
+    @media only screen and (max-width: $bp-largest) {
+        right: 41%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        right: 39%;
+    }
+    
+    @media only screen and (max-width: $bp-medium) {
+        right: 36%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        right: 35%;
+    }
+
     @media only screen and (max-width: $bp-smallest) {
         right: 30%;
     }
+
 }
 
 .slick-prev:before {

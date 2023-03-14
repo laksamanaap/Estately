@@ -73,9 +73,10 @@
 
     @media only screen and (max-width:$bp-small) {
         .nav-item {
-            padding: 24px 0px;
+            padding: 24px 0px 8px 0px;
         }
     }
+
 
     @media only screen and (max-width:$bp-small) {
         .nav-item:not(:last-child) {
@@ -100,8 +101,15 @@
 
     & a {
         color: $color-secondary;
-    }
+    } 
 
+}
+
+.nav-link {
+    
+    @media only screen and (max-width:$bp-smallest) {
+        font-size: 20px !important;
+    }
 }
 
 .navbar-nav > li > a {

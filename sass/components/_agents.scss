@@ -38,6 +38,10 @@
                 font-size: 2rem;
             }
         }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__link {
@@ -51,12 +55,20 @@
         cursor: pointer;
         gap: 8px;
         transition: all .2s ease-out;
+    }
 
-        &:hover {
-            transition: all .2s ease-out;
-            transform: translateX(8px);
-            color: $color-primary-lavender  ;
+    &__link:hover {
+        transition: all linear .2s;
+        transform: translateX(8px);
+        color: $color-primary-lavender;
+    
+        svg {
+            path{
+                transition: all linear .2s;
+                stroke: $color-primary-lavender;
+            }
         }
+
     }
 
     &__card-agents-wrap {
@@ -69,10 +81,19 @@
 
     &__card-agents-detail {
         cursor: pointer;
+
+
         a {
+            transition: all linear .3s;
             text-decoration: none;
             color: $color-secondary;
-            line-height: 0 !important;
+            line-height: 0 !important;     
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            a {
+                font-size: 1.1rem;
+            }
         }
 
     }
@@ -95,6 +116,22 @@
             z-index: 500;
             transition: all 0.3s linear;
             transform: translateY(-2px);
+
+            .agents__card-agents-detail {
+                a {
+                    color: $color-primary-lavender;
+                    transition: all linear .3s;
+                }
+
+                p {
+                    color: $color-secondary;
+                }
+            }
+
+            .agents__card-social-item {
+                transform: translateY(-1px);
+                transition: .6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+            }
         }
 
         @media only screen and (max-width:$bp-smallest) {
@@ -118,6 +155,7 @@
         width: 1.6rem;
         height: 1.6rem;
         border-radius: 50%;
+        transition: .6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 
         a {
             display: flex;
@@ -139,6 +177,12 @@
         img {
             overflow: hidden;
             border-radius:15px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            
 
             @media only screen and (max-width:$bp-smallest) {
                 width: 87px;
@@ -155,5 +199,6 @@
                 height: 100%;
             }
     }
+
     
 }

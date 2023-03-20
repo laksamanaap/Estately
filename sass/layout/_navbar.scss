@@ -124,3 +124,7 @@
     border-radius: 5px;
 
 }
+
+.navbar-toggler:focus {
+    box-shadow: unset;
+}

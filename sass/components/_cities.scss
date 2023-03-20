@@ -32,6 +32,10 @@
                 font-size: 2rem;
             }
         }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__link {
@@ -45,12 +49,20 @@
         cursor: pointer;
         gap: 8px;
         transition: all .2s ease-out;
+    }
 
-        &:hover {
-            transition: all .2s ease-out;
-            transform: translateX(8px);
-            color: $color-primary-lavender  ;
+    &__link:hover {
+        transition: all linear .2s;
+        transform: translateX(8px);
+        color: $color-primary-lavender;
+    
+        svg {
+            path{
+                transition: all linear .2s;
+                stroke: $color-primary-lavender;
+            }
         }
+
     }
 
     &__card-explore-cities-wrap {
@@ -67,17 +79,31 @@
         border: 2px solid $color-primary-lavender-light;
         border-radius: 15px;
         height: 100%;
-        transition: all 0.2s ease-out;
+        transition: .6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 
         &:hover {
-            transition: all 0.2s ease-out;
-            box-shadow: 0px 5px 8px rgba(38, 38, 38, 0.2);
-            transform: translateY(-4px);
+            transition: .5s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+            transform: translateY(-8px);
             border: 2px solid $color-primary-lavender;
             background-color: white;
+
+            .cities__card-cities-location {
+                a {
+                    color: $color-primary-lavender;
+                    transition: all linear .3s;
+                }
+            }
+
+            .cities__card-detail-wrap {
+               .paragraph-large-regular--gray {
+                    color: $color-secondary;
+                    transition: all linear .3s;
+               } 
+            }
+
           }
 
-          img {
+          img.card-img-top {
             border-radius: 15px;
           }
     }
@@ -93,6 +119,7 @@
         a {
             text-decoration: none;
             color: $color-secondary;
+            transition: all linear .3s;
     }
 
     @media only screen and (max-width: $bp-smallest) {
@@ -103,6 +130,11 @@
 }
 
     &__card-detail-wrap {
+
+        .paragraph-large-regular--gray {
+            transition: all linear .3s;
+        }
+        
         display: flex;
         grid-column-gap:8px;
         

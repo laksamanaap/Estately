@@ -2,8 +2,10 @@
 
 /*Color Primary (Lavender)*/
 $color-primary-lavender:#b592ff !important;
+$color-primary-lavender-darker: #a47ef5 !important; 
 $color-primary-lavender-dark:#c1a5ff !important; // Lavender 80
 $color-primary-lavender-light:#e7dcff !important; // Lavender 40
+$color-primary-lavender-light-2:#dacafd !important; // Lavender 40
 $color-primary-lavender-lighter: #F7F2FF !important; //Lavender 20 
 
 /*Color Primary (Minion)*/
@@ -26,10 +28,14 @@ $color-white: #ffffff;
 
 // RESPONSIVES BREAKPOINT PURPOSES
 $bp-largest: 75em; // 1200px / 16 == 75em (Default font size website)
-$bp-large: 62.5em; // 1000px
+$bp-large: 66.5em; // 1024px
+$bp-tablet-large:62em; //992px
 $bp-medium: 48em; // 768px
+$bp-medium-sm : 40em; // 640px
 $bp-small: 37.5em; // 600px
-$bp-smallest: 25em; //376px
+$bp-small-sm: 36em; // 576px
+$bp-smallest: 25em; // 376px
+$bp-mobile:20em; //320px
 
 * {
     margin: 0;
@@ -43,4 +49,17 @@ html {
 body {
     background-color: #fbfaff;
     overflow-x: hidden;
+
+    // @media only screen and (max-width:$bp-smallest) {
+    //     padding: 0 20px;
+    // }
 }
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,20px);
+    padding-left: var(--bs-gutter-x,20px);
+    margin-right: auto;
+    margin-left: auto;
+}
+

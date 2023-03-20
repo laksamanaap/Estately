@@ -18,8 +18,30 @@
     // background-color: aqua;
     display: flex;
     margin-bottom: 64px;
-    
-    
+
+    @media only screen and(max-width:$bp-medium) {
+        .container.u-margin-top-huge {
+            margin-top: 2rem !important;
+        }
+    }
+
+    @media only screen and(max-width:$bp-small) {
+        .container.u-margin-top-huge {
+            margin-top: 2rem !important;
+        }
+    }
+
+    @media only screen and(max-width:$bp-small-sm) {
+        .container.u-margin-top-huge {
+            margin-top: 10rem !important;
+        }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        .container.u-margin-top-huge {
+            margin-top: 4rem !important;
+        }     
+    }
 
     &__link {
         display: flex;
@@ -35,10 +57,20 @@
     }
 
     &__link:hover {
-        transition: all .2s ease-out;
+        transition: all linear .2s;
         transform: translateX(8px);
-        color: $color-primary-lavender  ;
+        color: $color-primary-lavender;
+    
+        svg {
+            path{
+                transition: all linear .2s;
+                stroke: $color-primary-lavender;
+            }
+        }
+
     }
+
+    
 
 
 
@@ -61,12 +93,67 @@
         border-radius: 15px;
         transition: all .2s ease-out;
 
-        &:hover {
-            transform: translateY(-7px);
-            transition: all .2s ease-out;
-            box-shadow: 0px 7px 7px 0px #c1a5ff4f;
+        .heading-4 {
+            transition: all linear .4s;
+        }
+
+        svg {
+            path {
+                transition: all linear .4s;
+            }
+        }
+
+        .paragraph-xlarge-regular--gray {
+            transition: all linear .4s;
+        }
+
+        .paragraph-normal-regular--gray {
+            transition: all linear .4s;
+        }
+
+        // .paragraph-large-regular--gray {
+        //     transition: all linear .4s;
+        // }  
+        
+        @media only screen and (max-width: $bp-smallest) {
+            margin-top: 2rem;
         }
     }
+
+    &__card:hover {
+        transition: all linear .2s;
+        border: 2px solid $color-primary-lavender;
+
+        .heading-4 {
+            transition: all linear .4s;
+            color: $color-primary-lavender;
+        }
+
+        svg {
+            path{
+                transition: all linear .4s;
+                stroke: $color-secondary;
+            }
+        }
+
+        .paragraph-xlarge-regular--gray {
+            transition: all linear .4s;
+            color: $color-secondary;
+        }
+
+        .paragraph-normal-regular--gray {
+            transition: all linear .4s;
+            color: $color-secondary;
+        }
+
+        // .paragraph-large-regular--gray {
+        //     transition: all linear .4s;
+        //     color: $color-secondary;
+        // }  
+        
+    }
+
+    
 
     &__img-wrap {
         height: 100%;
@@ -224,6 +311,7 @@
         grid-row-gap: 20px;
         padding: 1.5rem 2rem;
         flex-wrap: wrap;
+        transition: all linear .2s;
 
         &-item {
             display: flex;
@@ -311,10 +399,12 @@
         &-detail-name {
         cursor: pointer;
         margin-bottom: 0.5rem !important;
+        
 
         a {
             text-decoration: none;
             color: $color-secondary;
+            transition: all linear .2s;    
         }
             
         }
@@ -368,10 +458,38 @@
             justify-items: center;
         }
 
+
+
         &:hover {
-            transform: translateY(-7px);
             transition: all .2s ease-out;
             border: 2px solid $color-primary-lavender;
+            transform: translateY(-5px);
+            overflow: hidden;
+
+            .featured-listings__small-card-detail-price {
+                .text-price-2 {
+                    color: $color-secondary;
+                }
+            }
+
+            .featured-listings__small-card-detail-name {
+                a {
+                    color: $color-primary-lavender;
+                    transition: all linear .2s;
+                }
+            }
+
+            .featured-listings__small-card-description {
+              .paragraph-normal-regular--gray {
+                color: $color-secondary;
+              }  
+            }
+
+            .featured-listings__small-card-facilities{
+                .paragraph-normal-regular--gray {
+                    color: $color-secondary;
+                }
+            }
         }
     }
     // End : Small Card //

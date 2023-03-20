@@ -5,6 +5,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 64px;
+
         
         &-wrap {
         max-width: 30rem;
@@ -32,6 +33,10 @@
                 font-size: 1.7rem;
             }   
         }
+        
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__link {
@@ -46,11 +51,20 @@
         gap: 8px;
         transition: all .2s ease-out;
 
-        &:hover {
-            transition: all .2s ease-out;
-            transform: translateX(8px);
-            color: $color-primary-lavender  ;
+    }
+
+    &__link:hover {
+        transition: all linear .2s;
+        transform: translateX(8px);
+        color: $color-primary-lavender;
+    
+        svg {
+            path{
+                transition: all linear .2s;
+                stroke: $color-primary-lavender;
+            }
         }
+
     }
 
     &__featured-wrap {
@@ -82,6 +96,22 @@
             z-index: 500;
             transition: all 0.3s linear;
             transform: translateY(-2px);
+
+            .categories__text-wrap {
+                h5.heading-5 {
+                    color: $color-primary-lavender;
+                    transition: all linear .2s;
+                }
+
+                .paragraph-large-regular--gray {
+                    color: $color-secondary;
+                    transition: all linear .2s;
+                }
+            }
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 1rem;
         }
 
         @media only screen and (max-width: $bp-smallest) {
@@ -92,7 +122,21 @@
     &__detail-wrap {
         display: flex;
         grid-column-gap: 16px;
+
+        @media only screen and (max-width: $bp-largest) {
+            h5.heading-5 {
+                font-size: 1rem;
+                line-height: unset;
+            }
+        }
+
         
+        @media only screen and (max-width: $bp-tablet-large) {
+            h5.heading-5 {
+                font-size: 1.25rem;
+                line-height: 1;
+            }   
+        }
     }
 
     &__icon-wrap {
@@ -131,6 +175,10 @@
         cursor: pointer;
         gap: 8px;
         
+        @media only screen and (max-width:$bp-largest) {
+            font-size: 14px;
+        }
+
         }
 
         &:hover {
@@ -138,9 +186,22 @@
             transform: translateX(4px);
         }
 
+
     }
 
     &__text-wrap {
+        
+        h5, .paragraph-large-regular--gray {
+            transition: all linear .2s;
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            .paragraph-large-regular--gray {
+                font-size: 1rem;
+            }   
+        }
+
+
         @media only screen and (max-width: $bp-smallest) {
             .heading-5 {
                 font-size: 1.25rem;
@@ -152,6 +213,7 @@
                 font-size: 1.125rem;
             }   
         }
+        
     }
     
 

@@ -83,6 +83,46 @@
         }
     }
 
+    &__label {
+        position: absolute;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        z-index: 5;
+        display: flex;
+        padding: 5px 16px 5px 16px;
+        grid-column-gap: 4px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #191a23;
+        transform: translate(-7px, 32px);
+        text-transform: uppercase;
+    
+        
+        .paragraph-small-regular {
+            font-size: 14px;
+            color: #FFFFFF;
+            z-index: 10;
+            font-family: $font-display;
+        }
+
+
+        &--triangle {
+            position: absolute;
+            left: 0%;
+            top: 31px;
+            right: auto;
+            bottom: 0%;
+            width: 8px;
+            height: 8px;
+        }
+    }
+    
+    // &__label-left {
+    //     top: 64px;
+    // }
+
     &__card {
         // display: flex;
         // flex-direction: row;
@@ -353,6 +393,42 @@
     // End : Big Card //
 
     // Start : Small Card //
+    
+    &__label-small {
+        position: absolute;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        z-index: 5;
+        display: flex;
+        padding: 5px 16px 5px 16px;
+        grid-column-gap: 4px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #191a23;
+        transform: translate(-7px, 190px);
+        text-transform: uppercase;
+    
+        
+        .paragraph-small-regular {
+            font-size: 14px;
+            color: #FFFFFF;
+            z-index: 10;
+            font-family: $font-display;
+        }
+
+
+        &--triangle-small {
+            position: absolute;
+            left: 0%;
+            top: 31px;
+            right: auto;
+            bottom: 0%;
+            width: 8px;
+            height: 8px;
+        }
+    }
 
     &__row {
         grid-row-gap:24px;
@@ -464,7 +540,6 @@
             transition: all .2s ease-out;
             border: 2px solid $color-primary-lavender;
             transform: translateY(-5px);
-            overflow: hidden;
 
             .featured-listings__small-card-detail-price {
                 .text-price-2 {
@@ -489,6 +564,10 @@
                 .paragraph-normal-regular--gray {
                     color: $color-secondary;
                 }
+            }
+
+            .featured-listings__label-small {
+                overflow-x: visible !important;
             }
         }
     }

@@ -19,9 +19,16 @@
     display: flex;
     margin-bottom: 64px;
 
+    @media only screen and(max-width:$bp-tablet-large) {
+        .container.u-margin-top-huge {
+            margin-top: 15rem !important;
+        }
+    }
+
+
     @media only screen and(max-width:$bp-medium) {
         .container.u-margin-top-huge {
-            margin-top: 2rem !important;
+            margin-top: 10rem !important;
         }
     }
 
@@ -39,7 +46,7 @@
 
     @media only screen and (max-width: $bp-smallest) {
         .container.u-margin-top-huge {
-            margin-top: 4rem !important;
+            margin-top: 7rem !important;
         }     
     }
 
@@ -117,6 +124,34 @@
             width: 8px;
             height: 8px;
         }
+
+        @media only screen and (max-width:$bp-tablet-large) {
+            padding: 8px 30px 8px 30px;
+            transform: translate(-7px, 67px);
+
+            .featured-listings__label--triangle {
+                top: 43px;
+            }
+
+            .paragraph-small-regular {
+                font-size: 18px;
+            }
+    
+        }
+
+        @media only screen and (max-width:$bp-small) {
+            padding: 5px 16px 5px 16px;
+            transform: translate(-7px, 60px);
+
+            .featured-listings__label--triangle {
+                top: 37px;
+            }
+
+            .paragraph-small-regular {
+                font-size: 18px;
+            }
+    
+        }
     }
     
     // &__label-left {
@@ -126,6 +161,7 @@
     &__card {
         // display: flex;
         // flex-direction: row;
+        margin-top: 48px;
         align-items: stretch;
         padding: 0px;
         background: #FFFFFF;
@@ -207,6 +243,11 @@
             height: 100%;
             object-fit: cover;
             object-position: cover;
+
+            @media only screen and (max-width: $bp-tablet-large) {
+                width: 100%;
+                border-radius: 15px !important;
+            }
 
             @media only screen and (max-width:$bp-medium) {
                 border-radius: 15px !important;
@@ -376,6 +417,11 @@
             flex-direction: column;
         }
 
+        @media only screen and (max-width : $bp-tablet-large) {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+        }
+
         @media only screen and (max-width : $bp-medium) {
             display: flex;
             flex-wrap: wrap;
@@ -428,6 +474,10 @@
             width: 8px;
             height: 8px;
             transform: translate(-1px);
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            transform: translate(-7px, 155px);
         }
     }
 

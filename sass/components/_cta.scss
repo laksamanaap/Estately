@@ -72,6 +72,7 @@
         top: 0;
         right: 0;
         padding: 1rem 2rem;
+        transition: all linear .2s;
 
         @media only screen and (max-width: $bp-small) {
             position: relative;
@@ -79,7 +80,12 @@
             padding: 16px 32px;
         }
 
+        &:hover {
+            background-color: #C1A5FF !important;   
+            transition: all linear .2s;
+        }
     }
+
 
 
     &__bg-right {

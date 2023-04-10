@@ -27,6 +27,11 @@
         height: 692px;
         width: 100vw;
 
+        @media only screen and(max-width:$bp-tablet-large) {
+            height: 750px;
+            top: 43%;
+        }
+
         @media only screen and (max-width: $bp-large) {
             display: block;
         }
@@ -191,6 +196,24 @@
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            @media only screen and(max-width:$bp-tablet-large) {
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 85%;
+                }
+            }
+
+            @media only screen and(max-width:$bp-medium) {
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
             }
         }
         // left: 10%;

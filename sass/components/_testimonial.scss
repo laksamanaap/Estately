@@ -1,6 +1,12 @@
 .testimonial {
     width: 100vw;
 
+    @media only screen and (max-width:$bp-small-sm) {
+        .u-margin-top-huge {
+            margin-top: 15rem !important;
+        }
+    }
+
     &__heading {
         display: flex;
         justify-content: center;
@@ -74,7 +80,15 @@
 }
 
  /* the slides */
- .slick-slide {
+ .slick-track {
+    margin: 0 0 0 -12px;
+
+    @media only screen and (max-width: $bp-small-sm) {
+        margin: 0;
+    }
+}
+
+  .slick-slide {
     margin: 0 12px;
 }
 
@@ -127,7 +141,7 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        left: 33%;
+        left: 31%;
     }
 
 }
@@ -152,7 +166,7 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-        right: 30%;
+        right: 27%;
     }
 
 }

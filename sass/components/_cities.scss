@@ -5,6 +5,35 @@
         @media only screen and(max-width: $bp-medium) {
             grid-row-gap:32px;
         }
+
+        // Carousel
+
+        .slick-list {
+            margin: 0;
+
+            @media only screen and (max-width: $bp-large) {
+                margin: 0 -24px 50px 0;
+                overflow: visible !important;
+            }
+        }
+        
+        .slick-track {
+            margin: 0;
+
+            @media only screen and (max-width: $bp-small) {
+                margin: 0 0 0 10px;
+            }
+        }
+
+        .slick-cloned {
+            @media only screen and (max-width: $bp-small) {
+                margin: 0 7px;
+            }
+        }
+
+        .slick-prev, .slick-next {
+            top: 105% !important;
+        }
     }
 
     &__heading {

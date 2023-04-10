@@ -1332,6 +1332,9 @@ body {
           top: 37px; }
         .featured-listings__label .paragraph-small-regular {
           font-size: 18px; } }
+    @media only screen and (max-width: 25em) {
+      .featured-listings__label {
+        transform: translate(-7px, 25px); } }
   .featured-listings__card {
     margin-top: 48px;
     align-items: stretch;
